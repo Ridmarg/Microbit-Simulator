@@ -26,7 +26,7 @@ panic_mode = False
 """ Initialise the start_time, used for running_time function """
 def _initTime():
     global start_time
-    start_time = round(time.clock() * 1000)
+    start_time = round(time.process_time() * 1000)
 
 """ Panic function used to stop all code execution during runtime"""
 def panic():
